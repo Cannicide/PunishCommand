@@ -1,0 +1,884 @@
+######################
+
+#+                  +#
+
+#   MENU SETTINGS    #
+
+#+                  +#
+
+######################
+
+
+
+menu-settings:
+
+
+
+  # name - appears as the title - REQUIRED
+
+  name: '&4Punishment Menu'
+
+
+
+  # rows - the number of rows of the chest - REQUIRED
+
+  rows: 6
+
+
+
+  # command - OPTIONAL (you can remove this or set it to '')
+
+  # Bind multiple commands using ; (command: 'menu; m; me')
+
+  command: 'punishmenu'
+
+
+
+  # auto-refresh - OPTIONAL
+
+  # How frequently the menu will be refreshed, in seconds.
+
+  # Useful if you have variables in items' descriptions.
+
+  auto-refresh: 1
+
+
+
+  # This command command will be execute when the menu is opened.
+
+  # Supports all the icon command types.
+
+  open-action: 'sound: note pling'
+
+
+
+  # open-with-item - OPTIONAL
+
+  # The menu will open only right-clicking with orange wool [35:1]
+
+  open-with-item:
+
+    id: 367
+
+    left-click: false
+
+    right-click: false
+
+
+
+
+
+######################
+
+#+                  +#
+
+#       ITEMS        #
+
+#+                  +#
+
+######################
+
+
+
+
+
+colddeadcmd:
+
+  COMMAND: 'mute -s %punishcmd_player% 1hr Spamming.'
+
+  NAME: '&bSpam'
+
+  LORE:
+
+    - 'Spamming phrases/words/characters.'
+
+    - 'Punishment: &d1hr mute'
+
+  ID: mossy_cobblestone
+
+  KEEP-OPEN: false
+
+  POSITION-X: 3
+
+  POSITION-Y: 2
+
+randomarena:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 9
+
+  POSITION-Y: 6
+
+
+
+stygiacmd:
+
+  COMMAND: 'mute -s %punishcmd_player% 3hr Being an annoyance to players/staff.'
+
+  NAME: '&4Player Annoyance'
+
+  LORE:
+
+    - 'Excessively annoying players.'
+
+    - 'Punishment: &d3hr mute'
+
+  ID: stone
+
+  KEEP-OPEN: false
+
+  POSITION-X: 4
+
+  POSITION-Y: 2
+
+
+
+dawncmd:
+
+  COMMAND: 'mute -s %punishcmd_player% 4hr Staff disrespect/harassment.'
+
+  NAME: '&2Staff Disrespect/Harassment'
+
+  LORE:
+
+    - 'Being excessively derogatory towards staff.'
+
+    - 'Punishment: &d4hr mute'
+
+  ID: coal_ore
+
+  KEEP-OPEN: false
+
+  POSITION-X: 5
+
+  POSITION-Y: 2
+
+
+
+dreadspacecmd:
+
+  COMMAND: 'mute -s %punishcmd_player% 1d Verbal abuse/hate speech.'
+
+  NAME: '&7Verbal Abuse'
+
+  LORE:
+
+    - 'Bullying, racism, sexism, hate speech, etc.'
+
+    - 'Punishment: &d1d mute'
+
+  ID: iron_ore
+
+  KEEP-OPEN: false
+
+  POSITION-X: 6
+
+  POSITION-Y: 2
+
+
+
+cursecmd:
+
+  COMMAND: 'mute -s %punishcmd_player% 2d Advertising.'
+
+  NAME: '&cAdvertising'
+
+  LORE:
+
+    - 'Advertising non-zhorde servers, websites, etc.'
+
+    - 'Punishment: &d2d mute'
+
+  ID: gold_ore
+
+  KEEP-OPEN: false
+
+  POSITION-X: 7
+
+  POSITION-Y: 2
+
+
+
+grainscmd:
+
+  COMMAND: 'ban -s %punishcmd_player% Permanent ban for violations such as scamming or excessive disregard for the rules.'
+
+  NAME: '&ePermanent Ban'
+
+  LORE:
+
+    - 'Scamming/excessive hacking.'
+
+    - 'Note: &eRequires perms.'
+
+    - 'Punishment: &dPERM BAN'
+
+  ID: obsidian
+
+  KEEP-OPEN: false
+
+  POSITION-X: 4
+
+  POSITION-Y: 3
+
+
+
+hordelandscmd:
+
+  COMMAND: 'ipban -s %punishcmd_player% Permanent IP ban for violations such as ban evasion.'
+
+  NAME: '&dPermanent IP Ban'
+
+  LORE:
+
+    - 'Ban evasion.'
+
+    - 'Note: &eRequires perms.'
+
+    - 'Punishment: &dPERM BAN (IP)'
+
+  ID: bedrock
+
+  KEEP-OPEN: false
+
+  POSITION-X: 5
+
+  POSITION-Y: 3
+
+Schoolcmd:
+
+  COMMAND: 'mute -s %punishcmd_player% Permanent mute for violations such as mute evasion or excessive chat offenses.'
+
+  NAME: '&ePermanent Mute'
+
+  LORE:
+
+    - 'Mute evasion.'
+
+    - 'Note: Use this on the alt-account only.'
+
+    - 'Note: &eRequires perms.'
+
+    - 'Punishment: &dPERM MUTE'
+
+  ID: emerald_ore
+
+  KEEP-OPEN: false
+
+  POSITION-X: 3
+
+  POSITION-Y: 3
+
+
+pane1cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 1
+
+  POSITION-Y: 1
+
+
+
+pane2cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 2
+
+  POSITION-Y: 1
+
+
+
+pane3cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 3
+
+  POSITION-Y: 1
+
+
+
+pane4cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 4
+
+  POSITION-Y: 1
+
+
+
+pane5cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 5
+
+  POSITION-Y: 1
+
+
+
+pane6cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 6
+
+  POSITION-Y: 1
+
+
+
+pane7cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 7
+
+  POSITION-Y: 1
+
+
+
+pane8cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 8
+
+  POSITION-Y: 1
+
+
+
+pane9cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 9
+
+  POSITION-Y: 1
+
+
+
+pane10cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 1
+
+  POSITION-Y: 2
+
+
+
+pane11cmd:
+
+  COMMAND: 'mute -s %punishcmd_player% 1hr Overuse of caps.'
+
+  NAME: '&aCaps'
+
+  LORE:
+
+    - 'Excessive use of CAPITAL letters.'
+
+    - 'Punishment: &d1hr mute'
+
+  ID: dirt
+
+  KEEP-OPEN: false
+
+  POSITION-X: 2
+
+  POSITION-Y: 2
+
+
+
+pane12cmd:
+
+  COMMAND: 'ban -s %punishcmd_player% 3d Bug/safespot abuse.'
+
+  NAME: '&aBug/Safespot Abuse'
+
+  LORE:
+
+    - 'Abusing bugs/safespots to gain an advantage.'
+
+    - 'Punishment: &d3d ban'
+
+  ID: lapis_ore
+
+  KEEP-OPEN: false
+
+  POSITION-X: 8
+
+  POSITION-Y: 2
+
+
+
+pane13cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 9
+
+  POSITION-Y: 2
+
+
+
+pane14cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 1
+
+  POSITION-Y: 3
+
+
+
+pane15cmd:
+
+  COMMAND: 'ban -s %punishcmd_player% 7d Use of a hacked client.'
+
+  NAME: '&2Hacking'
+
+  LORE:
+
+    - 'Hacks/mods to gain an advantage.'
+
+    - 'Punishment: &d7d ban'
+
+  ID: diamond_ore
+
+  KEEP-OPEN: false
+
+  POSITION-X: 2
+
+  POSITION-Y: 3
+
+
+
+pane17cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 9
+
+  POSITION-Y: 3
+
+
+
+pane18cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 1
+
+  POSITION-Y: 4
+
+
+
+pane21cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 9
+
+  POSITION-Y: 4
+
+
+
+pane22cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 1
+
+  POSITION-Y: 5
+
+
+
+Volcanocmd:
+
+  COMMAND: 'seen %punishcmd_player%'
+
+  NAME: '&6Last Seen'
+
+  LORE:
+
+    - 'When &d%punishcmd_player%&7 was last online.'
+
+  ID: 347
+
+  KEEP-OPEN: true
+
+  POSITION-X: 4
+
+  POSITION-Y: 5
+
+
+
+Prisoncmd:
+
+  COMMAND: 'history %punishcmd_player%'
+
+  NAME: '&cHistory'
+
+  LORE:
+
+    - 'Punishment history of &d%punishcmd_player%&r.'
+
+  ID: 386
+
+  KEEP-OPEN: true
+
+  POSITION-X: 5
+
+  POSITION-Y: 5
+
+
+
+Strandedcmd:
+
+  COMMAND: 'alts %punishcmd_player%'
+
+  NAME: '&aAlts'
+
+  LORE:
+
+    - 'Possible alternate accounts of &d%punishcmd_player%.'
+
+    - 'IP: &d%parseother_{punishcmd_player}_{player_ip}%'
+
+  ID: 314
+
+  KEEP-OPEN: true
+
+  POSITION-X: 6
+
+  POSITION-Y: 5
+
+
+
+
+pane29cmd:
+
+  COMMAND: ''
+
+  NAME: '&3Player Info'
+
+  LORE:
+
+    - 'Rank: &d%parseother_{punishcmd_player}_{luckperms_primary_group_name}%'
+
+    - 'MC Version: &d%parseother_{punishcmd_player}_{viaversion_player_protocol_version}%'
+
+    - 'Nick: %parseother_{punishcmd_player}_{player_displayname}%'
+
+    - 'Online: &d%parseother_{punishcmd_player}_{player_online}%'
+
+    - 'Has Op: &d%parseother_{punishcmd_player}_{player_is_op}%'
+
+  ID: skull:3
+
+  SKULL-OWNER: '%punishcmd_player%'
+
+  KEEP-OPEN: true
+
+  POSITION-X: 8
+
+  POSITION-Y: 5
+
+
+
+pane30cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 9
+
+  POSITION-Y: 5
+
+
+pane31cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 1
+
+  POSITION-Y: 6
+
+
+pane32cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 2
+
+  POSITION-Y: 6
+
+
+pane302cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 3
+
+  POSITION-Y: 6
+
+
+pane132cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Punish: &d%punishcmd_player%'
+
+  LORE:
+
+    - 'Select the appropriate punishment,'
+
+    - 'to automagically punish the player.'
+
+  ID: 345
+
+  KEEP-OPEN: true
+
+  POSITION-X: 5
+
+  POSITION-Y: 6
+
+
+pane325cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 4
+
+  POSITION-Y: 6
+
+
+pane323cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 6
+
+  POSITION-Y: 6
+
+
+pane320cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 7
+
+  POSITION-Y: 6
+
+
+pane321cmd:
+
+  COMMAND: ''
+
+  NAME: '&7Choose a punishment...'
+
+  LORE:
+
+  ID: stained_glass_pane:15
+
+  KEEP-OPEN: true
+
+  POSITION-X: 8
+
+  POSITION-Y: 6
+

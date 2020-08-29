@@ -1,0 +1,12 @@
+name: PunishCommand
+version: 1.0.0
+author: Cannicide
+main: us.cannicide.punish.PunishCommand
+
+depend: [PlaceholderAPI]
+
+commands:
+  punish:
+    description: Opens a ChestCommands menu to punish a player.
+    usage: /punish <player>
+    permission: punishcmd.use

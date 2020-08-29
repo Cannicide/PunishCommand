@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PunishCommand:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PunishCommand_jar</output-path>
+    <root id="archive" name="PunishCommand.jar">
+      <element id="module-output" name="PunishCommand" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../spigot-api-1.8.8-R0.1-20160221.082514-43.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../PlaceholderAPI-2.10.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
